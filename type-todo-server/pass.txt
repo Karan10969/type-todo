@@ -1,0 +1,2 @@
+5cK8njtGDSNbGuOm
+mongodb+srv://karanyash1111:5cK8njtGDSNbGuOm@cluster0.st63fth.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
