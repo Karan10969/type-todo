@@ -1,0 +1,182 @@
+body {
+  overflow: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.main-todo-container {
+  height: 90vh;
+  width: 60vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-input {
+  margin-bottom: 30px;
+  height: 10%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Fredoka", sans-serif;
+}
+
+.add-task-label {
+  padding: 10px;
+  cursor: pointer;
+  transition: text-shadow 1s;
+}
+
+.add-task-label:hover {
+  text-shadow: #ffa31a 0px 0px 10px;
+}
+
+#add-task-id {
+  padding: 7px;
+  margin-right: 10px;
+}
+
+.todo-input-button {
+  background-color: #1b1b1b;
+  border: none;
+  height: 55%;
+  width: 20%;
+  font-family: "Fredoka", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.todo-input-button:hover {
+  background-color: #ffa31a;
+}
+
+#todo-input-button-add {
+  color: white;
+}
+
+#todo-input-button-add:hover {
+  color: black;
+}
+
+#todo-input-button-task {
+  width: 40px;
+  background-color: #ffa31a;
+}
+
+#todo-input-button-task:hover {
+  background-color: black;
+  color: white;
+}
+
+/* -------------------Todo task CSS----------------- */
+
+.todo-task {
+  font-family: "Fredoka", sans-serif;
+  list-style-type: none;
+  height: 70px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  overflow: hidden;
+}
+
+/*-----------edit note section----------------- */
+
+.visible-note {
+  display: flex;
+  align-items: center;
+}
+
+
+.edit-note-button {
+  border: none;
+  background-color: #ffa31a;
+  color: black;
+  height: 22px;
+  margin-right: 10px;
+  font-family: "Fredoka", sans-serif;
+  border-radius: 2px;
+}
+
+.edit-note-button:hover {
+  color: #ffa31a;
+  background-color: black;
+  cursor: pointer;
+}
+
+.delete-note-button{
+  border: none;
+  text-align: center;
+  margin-left: 20px;
+  height: 20px;
+  width: 24px;
+  padding: 0px;
+  background-color: rgb(237, 82, 82);
+  cursor: pointer;
+  border-radius: 4px;
+}
+.delete-note-button:hover{
+  background-color:black;
+}
+.delete-svg {
+  fill: black;
+  height: 20px;
+}
+.delete-svg:hover{
+  fill:red;
+}
+
+
+/*--------update-------*/
+
+.update-note-text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation-name: editNote;
+  animation-duration: 1s;
+}
+
+.update-button{
+  border: none;
+  font-family: "Fredoka", sans-serif;
+  color:black;
+  background-color: #ffa31a;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.update-button:hover{
+  color: #ffa31a;
+  background-color: #1b1b1b;
+  cursor: pointer;
+}
+
+.update-close-button{
+  height:13px;
+  font-size: 10px;
+  padding: 0px;
+  width: 13px;
+  background-color: rgb(159, 155, 155);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+}
+.update-close-button:hover{
+  opacity: 50%;
+}
+
+@keyframes editNote{
+  from {
+    translate: 0% -100%; 
+  }
+}
